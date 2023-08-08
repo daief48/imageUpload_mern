@@ -9,7 +9,7 @@ const App = () => {
   const [updateUI, setUpdateUI] = useState("");
 
   useEffect(() =>{
-    axios.get("http://localhost:5000/api/get").then((res) => {
+    axios.get("https://imageupload-mern-backend.onrender.com/api/get").then((res) => {
       console.log(res.data);
       setPhotos(res.data);
     }).catch((err) => console.log(err));
