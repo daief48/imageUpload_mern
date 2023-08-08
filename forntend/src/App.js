@@ -13,7 +13,7 @@ const App = () => {
       console.log(res.data);
       setPhotos(res.data);
     }).catch((err) => console.log(err));
-  }, [])
+  }, [updateUI])
 
   return (
     <div className='App'>
