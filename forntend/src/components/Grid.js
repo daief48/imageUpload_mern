@@ -7,7 +7,7 @@ const Grid = ({photos}) => {
       <div className="grid">
         {photos.map(({photo, _id}) =>(
             <div key={_id} className="grid__item">
-                <img src={`http://localhost:5000/uploads/${photo}`} alt="grib_image" />
+                <img src={`https://imageupload-mern-backend.onrender.com/uploads/${photo}`} alt="grib_image" />
             </div>
         ))}
       </div>
