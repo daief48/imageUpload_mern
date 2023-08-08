@@ -8,7 +8,7 @@ const Button = ({setUpdateUI}) => {
         const formData = new FormData();
         formData.append("photo", e.target.files[0]);
 
-        axios.post("http://localhost:5000/api/save",formData).then((res) => {
+        axios.post("https://imageupload-mern-backend.onrender.com/api/save",formData).then((res) => {
             console.log(res.data);
             setUpdateUI(res.data._id)
         }).catch((err) => console.log(err));
